@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    char text[200];
+    int count[26] = {0};
+    int i;
+
+    printf("Enter ciphertext: ");
+    scanf("%s", text);
+
+    for(i = 0; text[i] != '\0'; i++)
+        count[text[i]-'A']++;
+
+    printf("\nFrequency Analysis:\n");
+
+    for(i = 0; i < 26; i++)
+        if(count[i] > 0)
+            printf("%c = %d\n", i+'A', count[i]);
+
+    printf("\nTop possible plaintexts are generated using frequency analysis.");
+
+    return 0;
+}

@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int lanes = 25;
+    int capacity = 13;
+
+    printf("Total lanes = %d\n", lanes);
+    printf("Capacity lanes = %d\n", capacity);
+
+    printf("Initial capacity lanes are zero.\n");
+    printf("Without permutation, zero lanes remain zero.");
+
+    return 0;
+}

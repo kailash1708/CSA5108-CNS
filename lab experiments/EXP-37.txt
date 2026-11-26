@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    char text[100];
+    int count[26] = {0};
+    int i;
+
+    printf("Enter ciphertext: ");
+    scanf("%s", text);
+
+    for(i = 0; text[i] != '\0'; i++)
+        count[text[i]-'A']++;
+
+    printf("\nFrequency table:\n");
+
+    for(i = 0; i < 26; i++)
+        if(count[i] > 0)
+            printf("%c : %d\n", i+'A', count[i]);
+
+    printf("\nPossible plaintexts can be ranked using frequency.");
+
+    return 0;
+}

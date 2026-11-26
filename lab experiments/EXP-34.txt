@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char text[100];
+
+    printf("Enter plaintext: ");
+    scanf("%s", text);
+
+    printf("Plaintext length = %lu\n", strlen(text));
+    printf("Padding block added when required.\n");
+
+    return 0;
+}

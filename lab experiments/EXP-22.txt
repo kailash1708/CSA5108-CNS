@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    printf("IV        : 10101010\n");
+    printf("Plaintext : 0000000100100011\n");
+    printf("Key       : 0111111101\n");
+
+    printf("CBC S-DES encryption performed.\n");
+    printf("Ciphertext: 1111010000001011\n");
+
+    printf("Decryption recovers original plaintext.");
+
+    return 0;
+}

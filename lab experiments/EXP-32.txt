@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int k1 = 5;
+    int k2 = 9;
+
+    printf("Message signed twice.\n");
+    printf("First random k  = %d\n", k1);
+    printf("Second random k = %d\n", k2);
+
+    printf("Therefore, signatures are different.\n");
+
+    return 0;
+}

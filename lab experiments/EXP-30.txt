@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int X = 10;
+    int T = 7;
+    int second = X ^ T;
+
+    printf("Message X = %d\n", X);
+    printf("MAC T = %d\n", T);
+    printf("X XOR T = %d\n", second);
+
+    printf("Two-block message: X || (X XOR T)\n");
+
+    return 0;
+}

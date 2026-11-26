@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    char text[100];
+    int count[26] = {0};
+    int i, max = 0, key;
+
+    printf("Enter ciphertext: ");
+    scanf("%s", text);
+
+    for(i = 0; text[i] != '\0'; i++)
+        count[text[i]-'A']++;
+
+    for(i = 1; i < 26; i++)
+        if(count[i] > count[max])
+            max = i;
+
+    key = (max - 4 + 26) % 26;
+
+    printf("Possible key = %d\n", key);
+
+    printf("Possible plaintext: ");
+
+    for(i = 0; text[i] != '\0'; i++)
+        printf("%c", (text[i]-'A'-key+26)%26+'A');
+
+    return 0;
+}

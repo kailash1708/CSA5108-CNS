@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    char p[] = "HELLO";
+    int key[] = {3,19,5,7,2};
+    int i;
+
+    printf("Ciphertext: ");
+
+    for(i = 0; p[i] != '\0'; i++)
+        printf("%c", ((p[i]-'A'+key[i])%26)+'A');
+
+    return 0;
+}

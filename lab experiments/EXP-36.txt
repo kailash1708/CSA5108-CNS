@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    char text[100];
+    int a, b, p, i;
+
+    printf("Enter text: ");
+    scanf("%s", text);
+
+    printf("Enter a and b: ");
+    scanf("%d%d", &a, &b);
+
+    printf("Ciphertext: ");
+
+    for(i = 0; text[i] != '\0'; i++) {
+        p = text[i] - 'A';
+        printf("%c", (a*p+b)%26+'A');
+    }
+
+    return 0;
+}

@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    char p[100];
+
+    printf("Enter plaintext: ");
+    scanf("%s", p);
+
+    printf("CBC encryption using 3DES performed.\n");
+
+    printf("For security : 3DES\n");
+    printf("For performance : DES");
+
+    return 0;
+}

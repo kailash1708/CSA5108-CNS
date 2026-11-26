@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    int i;
+
+    printf("DES Decryption Key Order:\n");
+
+    for(i = 16; i >= 1; i--)
+        printf("K%d ", i);
+
+    return 0;
+}

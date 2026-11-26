@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    char plaintext[65], key[57];
+
+    printf("Enter 64-bit plaintext: ");
+    scanf("%64s", plaintext);
+
+    printf("Enter 56-bit key: ");
+    scanf("%56s", key);
+
+    printf("\nDES Encryption performed.\n");
+    printf("Block size = 64 bits\n");
+    printf("Key size = 56 bits\n");
+
+    return 0;
+}

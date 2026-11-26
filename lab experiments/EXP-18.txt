@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char key[57];
+
+    printf("Enter 56-bit key: ");
+    scanf("%56s", key);
+
+    printf("First 28 bits : %.28s\n", key);
+    printf("Second 28 bits: %.28s\n", key + 28);
+
+    printf("Each DES subkey contains 48 bits.");
+
+    return 0;
+}

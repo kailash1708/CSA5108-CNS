@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    char text[100];
+    int i;
+
+    printf("Enter message: ");
+    scanf("%s", text);
+
+    printf("Character values:\n");
+
+    for(i = 0; text[i] != '\0'; i++)
+        printf("%c = %d\n", text[i], text[i]-'A');
+
+    printf("\nSeparate RSA encryption is vulnerable to pattern analysis.");
+
+    return 0;
+}

@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    printf("CMAC Subkey Constants:\n");
+    printf("64-bit  block : 0x1B\n");
+    printf("128-bit block : 0x87\n");
+
+    printf("\nK1 is obtained by left shifting L.\n");
+    printf("K2 is obtained by left shifting K1.");
+
+    return 0;
+}

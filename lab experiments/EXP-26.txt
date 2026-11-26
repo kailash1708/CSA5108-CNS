@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    printf("Old public key  : (e1, n)\n");
+    printf("Old private key : (d1, n)\n");
+
+    printf("\nPrivate key leaked.\n");
+    printf("Generate new exponent pair.\n");
+
+    printf("\nUsing same modulus is NOT completely safe.\n");
+    printf("A new modulus should preferably be generated.");
+
+    return 0;
+}
